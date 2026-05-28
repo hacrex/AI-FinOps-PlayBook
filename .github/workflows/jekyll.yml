@@ -38,10 +38,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install --path vendor/bundle
+      - - name: Install dependencies
+  run: |
+    gem install bundler
+    bundle config set path 'vendor/bundle'
+    bundle install
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
