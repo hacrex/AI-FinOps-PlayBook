@@ -1,5 +1,5 @@
 # Workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with Hacker Theme
+name: Deploy Jekyll Site to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -33,21 +33,22 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false # We'll run bundle install manually to avoid cache issues
+          bundler-cache: true
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
-      - - name: Install dependencies
-  run: |
-    gem install bundler
-    bundle config set path 'vendor/bundle'
-    bundle install
+      - name: Install dependencies
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          PAGES_REPO_NWO: ${{ github.repository }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

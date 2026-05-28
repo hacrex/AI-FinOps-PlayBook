@@ -512,5 +512,5 @@ rm -f .env rate_limiter.py api_proxy.py test_rate_limiter.py test_budget_limit.p
 ## Related Techniques
 
 - [M-03: Model Routing](m03-model-router.md) — Combine routing with rate limits for cost control
-- [M-06: Observability](m06-observability.md) — Track rate limit events in your observability platform
-- [Self-Hosted: Rate Limiting Inference Servers](../self-hosted/s05-rate-limiting.md) — Apply similar patterns to self-hosted models
+- [M-06: Observability](M-06-Observability/README.md) — Track rate limit events in your observability platform
+- [Self-Hosted: Rate Limiting Inference Servers](../self-hosted/s05-gpu-observability.md) — Apply similar patterns to self-hosted models
