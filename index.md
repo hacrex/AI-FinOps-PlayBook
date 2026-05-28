@@ -49,7 +49,3 @@ Do you manage GPUs, CUDA, or inference servers?
 - [Labs](/labs/)
 - [Case Studies](/case-studies/)
 - [Documentation](/docs/)
-- [README (full playbook)](/README.md)
-
----
-
