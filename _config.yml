@@ -7,7 +7,7 @@ baseurl: "" # Change this if your site is in a subdirectory (e.g., "/repo-name")
 url: "" # Your base URL (e.g., "https://username.github.io")
 
 # Theme configuration - Using theme gem for GitHub Actions deployment
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman
 
 # Build settings
 markdown: kramdown
@@ -21,7 +21,6 @@ author:
 
 # Exclude files from build
 exclude:
-  - README.md
   - CONTRIBUTING.md
   - LICENSE
   - IMPLEMENTATION_SUMMARY.md
@@ -31,3 +30,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Use GitHub Flavored Markdown rendering
+kramdown:
+  input: GFM

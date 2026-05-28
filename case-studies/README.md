@@ -96,9 +96,9 @@ List the specific tools, frameworks, and services:
 
 | Company | Industry | Outcome | Read |
 |---------|----------|---------|------|
-| [FinTech Startup] | Financial Services | 73% reduction in token spend via context optimization | [Coming soon](case-study-fintech-context-opt.md) |
-| [Healthcare SaaS] | Healthcare | $15K/month saved with spot GPU batch processing | [Coming soon](case-study-healthcare-spot.md) |
-| [E-commerce Platform] | Retail | 45% cost reduction through model routing + caching | [Coming soon](case-study-ecommerce-routing.md) |
+| [FinTech Startup] | Financial Services | 73% reduction in token spend via context optimization | Coming soon |
+| [Healthcare SaaS] | Healthcare | $15K/month saved with spot GPU batch processing | Coming soon |
+| [E-commerce Platform] | Retail | 45% cost reduction through model routing + caching | Coming soon |
 
 ---
 
