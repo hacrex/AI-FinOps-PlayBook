@@ -25,21 +25,21 @@ Do you manage GPUs, CUDA, or inference servers?
 
 ## Managed AI FinOps (Token Spend)
 
-- [Prompt Compression](/managed/01-prompt-compression/)
-- [Caching](/managed/02-caching/)
-- [Model Routing](/managed/03-model-routing/)
-- [Context Optimization](/managed/04-context-optimization/)
-- [Rate Limiting](/managed/05-rate-limiting/)
-- [Observability](/managed/06-observability/)
+- [Prompt Compression](/managed/01-prompt-compression.md)
+- [Caching](/managed/02-caching.md)
+- [Model Routing](/managed/03-model-routing.md)
+- [Context Optimization](/managed/04-context-optimization.md)
+- [Rate Limiting](/managed/05-rate-limiting.md)
+- [Observability](/managed/06-observability.md)
 
 ## Self-Hosted AI FinOps (GPU Economics)
 
-- [Quantization](/self-hosted/01-quantization/)
-- [vLLM](/self-hosted/02-vllm/)
-- [Karpenter](/self-hosted/03-karpenter/)
-- [MIG Partitioning](/self-hosted/04-mig-partitioning/)
-- [Ray / Kubernetes](/self-hosted/05-ray-kubernetes/)
-- [Spot GPU Optimization](/self-hosted/06-spot-gpu/)
+- [Quantization](/self-hosted/01-quantization.md)
+- [vLLM](/self-hosted/02-vllm.md)
+- [Karpenter](/self-hosted/03-karpenter.md)
+- [MIG Partitioning](/self-hosted/04-mig-partitioning.md)
+- [Ray / Kubernetes](/self-hosted/05-ray-kubernetes.md)
+- [Spot GPU Optimization](/self-hosted/06-spot-gpu.md)
 
 ## Core References
 
@@ -49,8 +49,3 @@ Do you manage GPUs, CUDA, or inference servers?
 - [Labs](/labs/)
 - [Case Studies](/case-studies/)
 - [Documentation](/docs/)
-- [README (full playbook)](/README)
-
----
-
-*Powered by Jekyll with the Hacker theme for GitHub Pages.*

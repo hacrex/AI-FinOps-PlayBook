@@ -1,5 +1,5 @@
 # Workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with Hacker Theme
+name: Deploy Jekyll Site to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch

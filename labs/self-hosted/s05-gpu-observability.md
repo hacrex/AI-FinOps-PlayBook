@@ -714,7 +714,7 @@ rm -f dcgm-values.yaml prometheus-values.yaml servicemonitor.yaml gpu-dashboard.
 
 - [S-01: vLLM Deployment](s01-vllm-prometheus.md) — Add inference metrics to this dashboard
 - [S-03: Karpenter Autoscaling](s03-karpenter-gpu.md) — Use utilization metrics for scaling decisions
-- [S-06: Spot GPU Optimization](s06-spot-gpu.md) — Monitor spot GPU health and interruptions
+- [S-06: Spot GPU Optimization](s04-spot-gpu.md) — Monitor spot GPU health and interruptions
 
 ---
 
