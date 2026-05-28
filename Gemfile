@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-# Jekyll for GitHub Pages
-gem "jekyll", "~> 4.3"
-gem "jekyll-remote-theme", "~> 0.4"
+# Jekyll for GitHub Pages with Hacker theme
+gem "github-pages", group: :jekyll_plugins
 
-# Group for GitHub Pages compatibility
+# Theme plugin (included in github-pages but explicit declaration helps)
 group :jekyll_plugins do
-  gem "jekyll-remote-theme", "~> 0.4"
+  gem "jekyll-remote-theme"
 end
