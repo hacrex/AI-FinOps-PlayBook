@@ -6,12 +6,8 @@ description: Comprehensive guide to AI FinOps practices, tools, and strategies
 baseurl: "" # Change this if your site is in a subdirectory (e.g., "/repo-name")
 url: "" # Your base URL (e.g., "https://username.github.io")
 
-# Theme configuration - Using remote_theme for GitHub Pages
-remote_theme: pages-themes/hacker@v0.2.0
-
-# Plugins
-plugins:
-  - jekyll-remote-theme
+# Theme configuration - Using theme gem for GitHub Actions deployment
+theme: jekyll-theme-hacker
 
 # Build settings
 markdown: kramdown
