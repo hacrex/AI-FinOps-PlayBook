@@ -1,0 +1,29 @@
+# Jekyll configuration for GitHub Pages with Hacker theme
+
+title: AI FinOps Overview
+description: Comprehensive guide to AI FinOps practices, tools, and strategies
+baseurl: "" # Change this if your site is in a subdirectory
+url: "" # Your base URL (e.g., https://username.github.io)
+
+# Theme configuration
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Optional: Custom variables
+github_username: ""
+twitter_username: ""
+linkedin_username: ""
+
+# Exclude files from build
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - IMPLEMENTATION_SUMMARY.md
+  - "*.svg"
+  - ".gitignore"
