@@ -33,10 +33,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: false # We'll run bundle install manually to avoid cache issues
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install --path vendor/bundle
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
