@@ -1,23 +1,27 @@
 # Jekyll configuration for GitHub Pages with Hacker theme
+# Reference: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 
 title: AI FinOps Overview
 description: Comprehensive guide to AI FinOps practices, tools, and strategies
-baseurl: "" # Change this if your site is in a subdirectory
-url: "" # Your base URL (e.g., https://username.github.io)
+baseurl: "" # Change this if your site is in a subdirectory (e.g., "/repo-name")
+url: "" # Your base URL (e.g., "https://username.github.io")
 
-# Theme configuration
+# Theme configuration - Using remote_theme for GitHub Pages
 remote_theme: pages-themes/hacker@v0.2.0
+
+# Plugins
 plugins:
   - jekyll-remote-theme
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+permalink: pretty
 
-# Optional: Custom variables
-github_username: ""
-twitter_username: ""
-linkedin_username: ""
+# Optional: Site author
+author:
+  name: ""
+  url: ""
 
 # Exclude files from build
 exclude:
@@ -27,3 +31,7 @@ exclude:
   - IMPLEMENTATION_SUMMARY.md
   - "*.svg"
   - ".gitignore"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

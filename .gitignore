@@ -1,11 +1,12 @@
 ```
 # Dependencies
-vendor/
-
-# Build artifacts
-_site/
+vendor/bundle/
 .jekyll-cache/
 .sass-cache/
+
+# Logs and temp files
+*.log
+*.tmp
 
 # Environment
 .env
@@ -15,78 +16,4 @@ _site/
 # Editors
 .vscode/
 .idea/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
-
-# Coverage reports
-coverage/
-htmlcov/
-*.coverage
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/modules/
-*.tmproj
-*.lck
-
-# Ruby
-*.gem
-*.rbc
-.bundle/
-.jruby-md5
-.jruby-tmp
-.rakeTasks
-.pkg/
-test/lib/
-*.dump
-.rbc
-*.sqlite3
-_tmp/
-log/
-tmp/
-db/*.sqlite3-journal
-public/system/
-vendor/bundle/
-.bundle/
-lib/bundler/man/
-*.orig
-*.rej
-*.bak
-*.save
-*.tmp
-*~
-.project
-.DS_Store
-.yardoc/
-_yardoc/
-doc/
-.rubocop.yml
-Gemfile.lock
-
-# Jekyll
-_site/
-.jekyll-metadata
-.sass-cache/
-.jekyll-cache/
 ```
