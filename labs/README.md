@@ -12,6 +12,7 @@
 | [M-02: Semantic cache with GPTCache + Redis](managed/m02-semantic-cache.md) | Caching | Semantic cache layer in front of any LLM API | 60 min |
 | [M-03: Model router with LiteLLM](managed/m03-model-router.md) | Model Routing | Cost-aware router: cheap model first, escalate on failure | 60 min |
 | [M-04: Context optimization for agents](managed/m04-context-optimization.md) | Context Optimization | Sliding window context manager with summarization | 60 min |
+| [M-05: Rate limiting with token buckets](managed/m05-rate-limiting.md) | Rate Limiting | Token budget enforcement with Redis + alerting | 60 min |
 
 ## Self-hosted GPU labs
 
@@ -21,6 +22,7 @@
 | [S-02: Quantization benchmark](self-hosted/s02-quantization-bench.md) | Quantization | FP16 vs INT8 vs INT4 quality and throughput comparison | 60 min |
 | [S-03: Karpenter GPU autoscaler on EKS](self-hosted/s03-karpenter-gpu.md) | Karpenter | GPU NodePool with spot-first + consolidation on EKS | 90 min |
 | [S-04: Spot GPU batch inference](self-hosted/s04-spot-gpu.md) | Spot Optimization | Checkpoint-aware batch processor with interruption handling | 75 min |
+| [S-05: GPU utilization monitoring](self-hosted/s05-gpu-observability.md) | Observability | DCGM + Prometheus + Grafana stack with cost alerts | 75 min |
 
 ---
 
