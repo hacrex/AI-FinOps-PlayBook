@@ -9,11 +9,9 @@ Real-world examples and implementations of AI FinOps practices.
 
 ## Available Case Studies
 
-{% for file in site.static_files %}
-  {% if file.path contains 'case-studies' and file.name contains '.md' and file.name != 'index.md' and file.name != 'README.md' %}
-    - [{{ file.name }}]({{ file.path }})
-  {% endif %}
+{% assign case_pages = site.pages | where_exp: 'p', "p.path contains 'docs/case-studies/'" %}
+{% for p in case_pages %}
+- [{{ p.title | default: p.name }}]({{ p.url | relative_url }})
 {% endfor %}
 
-- [Overview](./README.md) - Introduction to case studies
-
+- [Overview]({{ "/case-studies/README.md" | relative_url }}) - Introduction to case studies

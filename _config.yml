@@ -1,4 +1,4 @@
-# Jekyll configuration for GitHub Pages with Hacker theme
+# Jekyll configuration for GitHub Pages with Cayman theme
 # Reference: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 
 title: AI FinOps Overview
@@ -6,8 +6,8 @@ description: Comprehensive guide to AI FinOps practices, tools, and strategies
 baseurl: "" # Change this if your site is in a subdirectory (e.g., "/repo-name")
 url: "" # Your base URL (e.g., "https://username.github.io")
 
-# Theme configuration - Using theme gem for GitHub Actions deployment
-theme: jekyll-theme-hacker
+# Theme configuration - Using Cayman theme gem for GitHub Actions deployment
+theme: jekyll-theme-cayman
 
 # Build settings
 markdown: kramdown
@@ -21,7 +21,6 @@ author:
 
 # Exclude files from build
 exclude:
-  - README.md
   - CONTRIBUTING.md
   - LICENSE
   - IMPLEMENTATION_SUMMARY.md
@@ -31,3 +30,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Use GitHub Flavored Markdown rendering
+kramdown:
+  input: GFM
