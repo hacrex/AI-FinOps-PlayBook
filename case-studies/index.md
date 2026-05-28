@@ -11,7 +11,7 @@ Real-world examples and implementations of AI FinOps practices.
 
 {% assign case_pages = site.pages | where_exp: 'p', "p.path contains 'docs/case-studies/'" %}
 {% for p in case_pages %}
-- [{{ p.title | default: p.name }}]({{ p.url | relative_url }})
+- [{{ p.title | default: p.name }}]({{ p.url }})
 {% endfor %}
 
-- [Overview]({{ "/case-studies/README.md" | relative_url }}) - Introduction to case studies
+- [Overview](./README.md) - Introduction to case studies
