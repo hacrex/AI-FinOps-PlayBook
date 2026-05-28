@@ -21,7 +21,6 @@ author:
 
 # Exclude files from build
 exclude:
-  - README.md
   - CONTRIBUTING.md
   - LICENSE
   - IMPLEMENTATION_SUMMARY.md
