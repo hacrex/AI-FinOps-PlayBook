@@ -62,6 +62,7 @@ Do you manage GPUs, CUDA, or inference servers?
 | [Decision Matrix](comparison/decision-matrix.md) | Choosing your operating model |
 | [Managed Tools Stack](tools/managed-stack.md) | Langfuse, OpenTelemetry, Helicone, BigQuery |
 | [Self-Hosted Tools Stack](tools/self-hosted-stack.md) | DCGM, Prometheus, Grafana, vLLM, Karpenter, Kubecost |
+| [Security & Compliance](security/README.md) | HIPAA, GDPR, PII redaction, audit logging |
 
 ---
 
