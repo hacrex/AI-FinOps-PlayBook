@@ -21,7 +21,6 @@ author:
 
 # Exclude files from build
 exclude:
-  - README.md
   - CONTRIBUTING.md
   - LICENSE
   - IMPLEMENTATION_SUMMARY.md
@@ -31,3 +30,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Use GitHub Flavored Markdown rendering
+kramdown:
+  input: GFM
