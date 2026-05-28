@@ -32,25 +32,25 @@ Do you manage GPUs, CUDA, or inference servers?
 
 ### Managed AI FinOps — 6 techniques to reduce token spend
 
-| # | Technique | Core idea |
-|---|-----------|-----------|
-| 01 | [Prompt Compression](managed/01-prompt-compression.md) | Smaller prompts = lower input token cost |
-| 02 | [Caching](managed/02-caching.md) | Cache hits eliminate billable API calls |
-| 03 | [Model Routing](managed/03-model-routing.md) | Route simple tasks to cheaper models |
-| 04 | [Context Optimization](managed/04-context-optimization.md) | Lean context windows in agentic workflows |
-| 05 | [Rate Limiting](managed/05-rate-limiting.md) | Quotas prevent runaway cost spikes |
-| 06 | [Observability](managed/06-observability.md) | Visibility is the prerequisite for everything |
+| # | Technique | Core idea | Lab |
+|---|-----------|-----------|-----|
+| 01 | [Prompt Compression](managed/01-prompt-compression.md) | Smaller prompts = lower input token cost | ✅ M-01 |
+| 02 | [Caching](managed/02-caching.md) | Cache hits eliminate billable API calls | ✅ M-02 |
+| 03 | [Model Routing](managed/03-model-routing.md) | Route simple tasks to cheaper models | ✅ M-03 |
+| 04 | [Context Optimization](managed/04-context-optimization.md) | Lean context windows in agentic workflows | ✅ M-04 |
+| 05 | [Rate Limiting](managed/05-rate-limiting.md) | Quotas prevent runaway cost spikes | ✅ M-05 |
+| 06 | [Observability](managed/06-observability.md) | Visibility is the prerequisite for everything | ✅ M-06 |
 
 ### Self-Hosted AI FinOps — 6 techniques to maximize GPU economics
 
-| # | Technique | Core idea |
-|---|-----------|-----------|
-| 01 | [Quantization](self-hosted/01-quantization.md) | INT8/INT4 shrinks VRAM, increases throughput |
-| 02 | [vLLM](self-hosted/02-vllm.md) | PagedAttention maximizes requests per GPU |
-| 03 | [Karpenter](self-hosted/03-karpenter.md) | Scale down idle GPU nodes automatically |
-| 04 | [MIG Partitioning](self-hosted/04-mig-partitioning.md) | Split one GPU into up to 7 isolated slices |
-| 05 | [Ray / Kubernetes](self-hosted/05-ray-kubernetes.md) | Efficient distributed workload orchestration |
-| 06 | [Spot GPU Optimization](self-hosted/06-spot-gpu.md) | 60–80% compute savings on interruptible workloads |
+| # | Technique | Core idea | Lab |
+|---|-----------|-----------|-----|
+| 01 | [Quantization](self-hosted/01-quantization.md) | INT8/INT4 shrinks VRAM, increases throughput | ✅ S-01 |
+| 02 | [vLLM](self-hosted/02-vllm.md) | PagedAttention maximizes requests per GPU | ✅ S-02 |
+| 03 | [Karpenter](self-hosted/03-karpenter.md) | Scale down idle GPU nodes automatically | ✅ S-03 |
+| 04 | [MIG Partitioning](self-hosted/04-mig-partitioning.md) | Split one GPU into up to 7 isolated slices | ✅ S-04 |
+| 05 | [Ray / Kubernetes](self-hosted/05-ray-kubernetes.md) | Efficient distributed workload orchestration | ✅ S-05 |
+| 06 | [Spot GPU Optimization](self-hosted/06-spot-gpu.md) | 60–80% compute savings on interruptible workloads | ✅ S-06 |
 
 ### Cross-cutting reference
 
@@ -63,6 +63,9 @@ Do you manage GPUs, CUDA, or inference servers?
 | [Managed Tools Stack](tools/managed-stack.md) | Langfuse, OpenTelemetry, Helicone, BigQuery |
 | [Self-Hosted Tools Stack](tools/self-hosted-stack.md) | DCGM, Prometheus, Grafana, vLLM, Karpenter, Kubecost |
 | [Security & Compliance](security/README.md) | HIPAA, GDPR, PII redaction, audit logging |
+| [Infrastructure Templates](infrastructure/terraform/) | Terraform modules for EKS/GKE GPU clusters |
+| [Case Studies](docs/case-studies/) | Real-world migration stories and ROI analysis |
+| [Advanced Topics](docs/advanced-topics/) | Fine-tuning economics, vector DB optimization |
 
 ---
 
